@@ -13,7 +13,7 @@ body
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: url(bday.jpg);
+	background: linear-gradient(120deg, #8a2387, #e94057, #f27121);
 	background-size: cover;
 	overflow: hidden;
 }
@@ -25,7 +25,7 @@ ul li
 
 ul li a
 {
-	text-shadow: 3px 3px 10px #000;
+	text-shadow: 3px 3px 10px linear-gradient(transparent,transparent,rgba(0,0,0,0.2));
 	position: relative;
 	display: block;
 	color: transparent;

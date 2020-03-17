@@ -14,7 +14,7 @@ body
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: url(bday.jpg);
+	background: linear-gradient(120deg, #8a2387, #e94057, #f27121);
 	background-size: cover;
 }
 
