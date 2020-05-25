@@ -188,6 +188,18 @@ font-size:15px;
   .panel{
     width:80%;
   }
+  .header
+  {
+  	display: flex;
+  }
+  .logo
+  {
+  	flex-grow: 6;
+  }
+  .signin
+  {
+  	top: 5px;
+  }
   .main{
   	background-image: linear-gradient(to bottom right, #606060FF 40%, #D6ED17FF); 
   	background-size: contain;
