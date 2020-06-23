@@ -68,12 +68,7 @@ body
 .main
 {
 	min-height: 86vh;
-	background:url(../image/bg2.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	background-image: linear-gradient(to bottom right, #606060FF 40%, #D6ED17FF);
 }
 
 .wrapper {
