@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KJEI's KJCOEMR</title>
+	<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			overflow-x: hidden; 
+		}
+		section
+		{
+			width: 100%;
+			min-height: 100vh;
+			background-image: linear-gradient(to bottom right, #606060FF 40%, #D6ED17FF);
+			color: white;
+		}
+		section div 
+		{
+			padding: 3em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.btn-solid-lg 
+		{
+			display: inline-block;
+			margin-top: 30px;
+			padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+			border: 0.125rem solid #D6ED17FF;
+			border-radius: 2rem;
+			background-color: #D6ED17FF;
+			color: black;
+			font: 700 0.75rem/0 "Raleway", sans-serif;
+			text-decoration: none;
+			transition: all 0.2s;
+		}
+
+		.line{
+			border-right: 2px solid rgba(255, 255, 255, 0.75);
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+		.anim-typewriter
+		{
+			animation: typewriter 4s steps(40) 1s 1 normal both,
+			blinkTextCursor 500ms steps(40) infinite normal;
+		}
+
+		@keyframes typewriter {
+			from {
+				width:0;
+			}
+			to {
+				width: 770px;
+			}
+		}
+
+		@keyframes blinkTextCursor {
+			from {
+				border-right-color: rgba(255, 255, 255, 0.75);
+			}
+			to {
+				border-right-color: transparent;
+			}
+		}
+
+
+
+		.btn-solid-lg:hover {
+			background-color: transparent;
+			color: #D6ED17FF;
+			text-decoration: none;
+		}
+		@media only screen and (max-width:620px) {
+			#logo
+			{
+				padding: 20px;
+			}
+			#logo h2
+			{
+				padding-left: 15px;
+			}
+			#logo a
+			{
+				min-width: 87px;
+				height: 100px;
+			}
+	</style>
+</head>
+<body>
+	<section>
+		<div id="logo">
+			<a href="https://kjei.edu.in/kjcoemr/"><img src="image/clglogo.png" style="width: 87px; height: 100px;"></a><h2 style="line-height: 32px; font-size: 30px; font-weight: bolder;">  K J College of Engineering and Management Research, Pune</h2>
+		</div>
+		<div class="container">
+                    <div class="col-lg-6 text-area" style="display: flex; justify-content: center; flex-direction: column; text-align: center; center; padding:20px;">
+                            <h1 style="font-size: 2.5em;" class="line anim-typewriter"><span style="color: #D6ED17FF;">Welcome to KJCOEMR</span><br></h1><h1  style="font-size: 2.5em;"> Exam Portal</h1><br>
+                            <p style="font-size: 1.25em;">K J College of Engineering and Management Research, Pune is providing you a platform to test your preparations for the MH-CET. While you are home, you can easily polish your exam preparation from our portal for absolutely no cost!</p>
+                            <a class="btn-solid-lg page-scroll" href="registration.html">CONTINUE</a>
+                    </div>
+            </div>		
+	</section>
+
+</body>
+</html>

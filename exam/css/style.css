@@ -1,0 +1,221 @@
+*
+{
+	font-family: 'typo';
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	overflow-y: scroll;
+}
+
+body
+{
+	font-family: 'typo';
+	overflow: hidden;
+	min-height: 100vh;
+	background-attachment:fixed;
+}
+
+#notice
+{
+	font-size: 25px; 
+	border: 1.5px solid red;
+	background: white; min-width: 100%; 
+	color: red;
+	border-radius: 8px; 
+	line-height: 60px; 
+	max-height: 70px; 
+	position: absolute; 
+	bottom: 58px; 
+	text-align: center; 
+}
+
+#notice img
+{
+	transform: translateY(-5px);
+	width: 50px;
+	min-height: 50px;
+}
+
+.header, footer	
+{	
+	font-family: 'typo';	
+	color: #D6ED17FF;
+	padding: 3px;
+	min-height: 7vh;
+	background-color: #202020;
+	text-decoration: none;
+}
+
+.signin a
+{
+	background: #D6ED17FF; 
+	margin: 5px;
+	transition: all .3s ease-in-out
+}
+
+.signin a:hover
+{
+	margin: 5px;
+	color: white;
+	box-shadow: rgba(255, 255, 255, 100) 1px 1px 10px;
+	transform: translate3d(0px, -1px, 0px);
+
+}
+
+.main
+{
+	min-height: 86vh;
+	background:url(../image/bg2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper {
+	margin-top: -10px;
+	width: 100%;
+	height: 100%;
+	transform: translateY(-1%;);
+}
+
+.panel{
+	border-color:#eee;
+	margin:40px;
+	padding:20px;
+	font: 15px "Century Gothic", "Times Roman", sans-serif;
+}
+
+.accmain
+{
+	min-height: 86vh;
+	background:#dedede;
+	background-size: cover;
+}
+
+footer .footer-link 
+{
+	min-height: 5vh;
+	text-align: center;
+	background-color: #202020;
+	text-decoration: none;
+}
+
+footer .footer-link a 
+{
+	text-shadow: 1px 1px 1px black;
+	color: #D6ED17FF;
+	padding: 8px;
+}
+
+.logo
+{
+	font-size: 30px;
+	padding: 5px;
+}
+
+
+.sub1
+{
+width:90px;
+color:#202020;
+background:#D6ED17FF;
+font-size:15px;
+height:35px;
+margin:20px;
+padding:10px;
+width:100px;
+}
+
+
+.sub
+{
+width:100%;
+background-color:#9acd32;
+font-size:20px;
+padding:2px;
+margin-top:15px;
+margin-right:20px;
+}
+.sub:hover
+{
+color:#fff;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: #D6ED17FF;
+	padding: 5px;
+	margin: 5px; 
+	font-size: 20px;
+	transition: all 0.3s ease-in-out; 
+}
+
+footer a:hover
+{
+	text-decoration:none;
+	text-shadow: 0.5px 0.5px 0.5px black;
+	color: #202020;
+	border-radius: 3px;
+	background: #D6ED17FF;
+	box-shadow: rgba(255, 255, 255, 100) 1px 1px 10px;
+	transform: translate3d(0px, -1px, 0px);
+}
+
+.feedbtn:hover
+{
+	box-shadow: rgba(0, 0, 0, 0.6) 1px 1px 10px;
+	transform: translate3d(0px, -1px, 0px);
+}
+
+.log1
+{
+font: 15px 'Ubuntu', sans-serif;
+color:#D6ED17FF;
+margin-left:10px;
+}
+
+.log
+{
+margin:10px;
+background: #202020;
+margin-right:60px;
+margin-left:5px;
+color:#D6ED17FF;
+font-size:20px;
+font-size:15px;
+}
+
+@media only screen and (max-width:620px) {
+  .panel{
+    width:80%;
+  }
+  .header
+  {
+  	display: flex;
+  }
+  .logo
+  {
+  	flex-grow: 6;
+  }
+  .signin
+  {
+  	top: 5px;
+  }
+  .main{
+  	background-image: linear-gradient(to bottom right, #606060FF 40%, #D6ED17FF); 
+  	background-size: contain;
+  	width: 100%;
+  	height: 100vh;
+  }
+}
+
+
+
+
+
