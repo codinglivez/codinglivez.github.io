@@ -41,15 +41,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home<span class="sr-only">(current)</span></a></li>
+        <li ><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home<span class="sr-only">(current)</span></a></li>
         <li ><a href="#">User</a></li>
 		<li ><a href="#">Ranking</a></li>
 		<li ><a href="#">Feedback</a></li>
-		<li class="dropdown">
+		<li class="dropdown active">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quiz<span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="adminaddquiz.html">Add Quiz</a></li>
-            <li><a target="_blank" href="adminaddquizexcel.html">Add Quiz using Excel Sheet</a></li>
             <li><a href="adminremovequiz.html">Remove Quiz</a></li>	
         </ul>
         <li class="pull-right"> <a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;&nbsp;Signout</a></li>  
@@ -62,38 +61,18 @@
 <div class="row">
 <div class="col-md-12">
 
-<div class="panel" style="min-height: 90%; min-width: 90%;">
-	<div class="table-responsive">
-		<table class="table table-striped title1">
-			<tr>
-				<td><b>S.N.</b></td>
-				<td><b>Topic</b></td>
-				<td><b>Total question</b></td>
-				<td><b>Marks</b></td>
-				<td><b>Time limit</b></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>1.</td>
-				<td>Object Oriented Programming</td>
-				<td>10</td>
-				<td>100</td>
-				<td>50 min</td>
-				<td><b><a href="#" class="pull-right btn sub1" style="margin:0px;background:#99cc32"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Start</b></span></a></b></td>
-			</tr>
-			<tr>
-				<td>2.</td>
-				<td>Java Programming</td>
-				<td>10</td>
-				<td>100</td><td>50 min</td>
-				<td><b><a href="#" class="pull-right btn sub1" style="margin:0px;background:#99cc32"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Start</b></span></a></b></td>
-			</tr>
-		</table>
+
+<div class="row">
+	<span class="title1" style="margin-left:45%;font-size:30px;">
+		<b>Instructions</b>
+	</span><br /><br />
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<img src="image/excelsheet.png" height="30%" width="100%"><br><br>
+		<p style="font-size: 20px;">The format shown in the above image should be followed for successful creation of the test..</p><br>
+		<button class="btn btn-primary" class="btn btn-primary"><a href="#" style="color: white; text-decoration: none;">Upload Excel Sheet</a></button>
+		<button style="float: right;" class="btn btn-primary" class="btn btn-primary"><a href="#" style="color: white; text-decoration: none;">Create Quiz</a></button>
 	</div>
-</div>
-
-
-
 </div></div></div></div>
 </div>
 
