@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
 * {
   margin: 0;
@@ -10,7 +9,7 @@ html {
   font-size: 16px;
 }
 body {
-  font-family: 'Lobster', cursive;
+  font-family: 'Roboto', cursive;
   color: #000;
   transition: 1s ease-in-out;
 }
@@ -28,7 +27,7 @@ body {
   color: #fff;
   text-align: center;
   padding: 1.75rem;
-  font-family: 'Lobster', cursive;
+  font-family: 'Roboto', cursive;
 }
 .header h1 {
   font-size: 2.25rem;
@@ -185,16 +184,19 @@ ul.add-currency-list li span {
   background-color: #ddd;
 }
 
-@media only screen and (max-width: 600px) {
-  html { font-size: 20px; }
+@media only screen and (max-width: 450px) {
+  html { font-size: 16px; }
   .container { width: 100%; margin: 0 auto; }
   ul.currencies { height: calc(100vh - 83px - 34px - 51px); }
-  .header h1 { font-size: 2rem; }
-  .flag { width: 3rem; height: 2rem; }
+  .header h1 { font-size: 1.2rem; }
+  .header h1 { font-size: 1.2rem; }
+  .header .add-currency-btn { padding: 0.5rem; }
+  .flag { width: 2rem; height: 1.6rem; }
+  .currency-symbol {padding: 0; margin: 0;}
   .info .input span { font-size: 1.25rem; width: 3.5rem; }
-  .info .input input { font-size: 1.25rem; width: 65%;}
-  .info .currency-name { margin-left: 3.5rem; }
+  .info .input input { font-size: 1.25rem; width: 65%; }
+  .info .currency-name { margin-left: 2.5rem; }
   .info .base-currency-rate { margin-left: 3.5rem; }
   ul.add-currency-list { bottom: 48px; height: calc(100vh - 80px - 51px); }
   .add-currency-btn i { left: 25%; top:0.65rem; }
-};
+}
