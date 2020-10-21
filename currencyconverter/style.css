@@ -186,7 +186,7 @@ ul.add-currency-list li span {
 
 @media only screen and (max-width: 450px) {
   html { font-size: 16px; }
-  .container { width: 100%; margin: 0 auto; }
+  .container { width: 100%; margin: 0 auto; border-radius: 0px; }
   ul.currencies { height: calc(100vh - 83px - 34px - 51px); }
   .header h1 { font-size: 1.2rem; }
   .header h1 { font-size: 1.2rem; }
