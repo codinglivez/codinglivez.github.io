@@ -1,0 +1,460 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Happy Diwali 🎊🎇</title>
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Nobile:400,700);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  background: url("firedark.png");
+  background-size: cover;
+  padding: 50px;
+}
+
+#card-front {
+  color: #FFDFDF;
+}
+
+#card, #card-front, #card-inside {
+  height: 580px;
+}
+
+.wrap {
+    padding: 1.5em 2.5em;
+    height: 100%;
+}
+#card-front, #card-inside {
+  width: 50%;
+  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  position: absolute;
+  left: 50%;
+}
+
+
+#card-inside .wrap {
+    background: #FFEFEF;
+    -webkit-box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+}
+#card {
+    max-width: 960px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 5000px;
+    -moz-perspective: 5000px;
+    -webkit-perspective: 5000px;
+    position: relative;
+}
+
+#card h1 {
+    text-align: center;
+    font-family: 'Nobile', sans-serif;
+    font-style: italic;
+    font-size: 70px;
+    text-shadow: 
+        4px 4px 0px rgba(0, 0, 0, .15),
+        1px 1px 0 rgba(255, 200, 200, 255),
+        2px 2px 0 rgba(255, 150, 150, 255),
+        3px 3px 0 rgba(255, 125, 125, 255);
+    color: #FFF;
+}
+#card-inside {
+    font-size: 1.1em;
+    line-height: 1.4;
+    font-family: 'Nobile';
+    color: #331717;
+    font-style: italic;
+}
+
+p {
+    margin-top: 1em;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+p.signed {
+    margin-top: 1.5em;
+    text-align: center;
+    font-family: 'Nobile', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+#card-front {
+    background-color: #673AB7;
+    background-image: linear-gradient(top, #673AB7 0%, #03A9F4 100%);
+    background-image: -moz-linear-gradient(top, #673AB7 0%, #03A9F4 100%);
+    background-image: -webkit-linear-gradient(top, #673AB7 0%, #03A9F4 100%);
+            transform-origin: left;
+       -moz-transform-origin: left;
+    -webkit-transform-origin: left;
+            transition:         transform 1s linear;
+       -moz-transition:    -moz-transform 1s linear;
+    -webkit-transition: -webkit-transform 1s linear;
+    position: relative;
+}
+
+#card-front .wrap {
+            transition: background 1s linear;
+       -moz-transition: background 1s linear;
+    -webkit-transition: background 1s linear;
+}
+
+button {
+  position: absolute;
+  bottom: 1em;
+  right: -12px;
+  background: #F44;
+  color: #FFF;
+  font-family: 'Nobile', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: .5em;
+  border: none;
+  cursor: pointer;
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .4);
+     -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .4);
+}
+
+button:hover,
+button:focus {
+  background: #F22;
+}
+
+#close {
+  display: none;
+}
+
+#card.open-fully #close,
+#card-open-half #close {
+  display: inline;
+}
+
+#card.open-fully #open {
+  display: none;
+}
+
+
+#card.open-half #card-front,
+#card.close-half #card-front {
+            transform: rotateY(-90deg);
+       -moz-transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
+}
+#card.open-half #card-front .wrap {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#card.open-fully #card-front,
+#card.close-half #card-front {
+  background: #FFEFEF;
+}
+
+#card.open-fully #card-front {
+    transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+#card.open-fully #card-front .wrap {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#card.open-fully #card-front .wrap *,
+#card.close-half #card-front .wrap * {
+   display: none;
+}
+
+footer {
+  max-width: 500px;
+  margin: 40px auto;
+  font-family: 'Nobile', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #888;
+  text-align: center;
+}
+
+.nxt {
+  float: right; 
+  font-weight: bold; 
+  font-family: 'Nobile', sans-serif;  
+  color: #000;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    background: url("firework.jpg");
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    margin: 0;
+  }
+
+  #card-front {
+  color: #FFDFDF;
+}
+
+#card, #card-front, #card-inside {
+  height: 600px;
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+}
+#card-front, #card-inside {
+  width: 100%;
+  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  position: absolute;
+}
+
+
+#card-inside .wrap {
+    background: #FFEFEF;
+    -webkit-box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+}
+#card {
+    width: 98%;
+    left: -50%;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 5000px;
+    -moz-perspective: 5000px;
+    -webkit-perspective: 5000px;
+    position: relative;
+}
+
+#card h1 {
+    text-align: center;
+    font-family: 'Nobile', sans-serif;
+    font-style: italic;
+    font-size: 60px;
+    text-shadow: 
+        4px 4px 0px rgba(0, 0, 0, .15),
+        1px 1px 0 rgba(255, 200, 200, 255),
+        2px 2px 0 rgba(255, 150, 150, 255),
+        3px 3px 0 rgba(255, 125, 125, 255);
+    color: #FFF;
+}
+#card-inside {
+    font-size: 1.1em;
+    line-height: 1.4;
+    font-family: 'Nobile';
+    color: #331717;
+    font-style: italic;
+}
+
+p {
+    margin-top: 1em;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+p.signed {
+    margin-top: 0em;
+    text-align: center;
+    font-family: 'Nobile', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+#card-front {
+    background-color: #673AB7;
+    background-image: linear-gradient(top, #673AB7 0%, #03A9F4 100%);
+    background-image: -moz-linear-gradient(top, #673AB7 0%, #03A9F4 100%);
+    background-image: -webkit-linear-gradient(top, #673AB7 0%, #03A9F4 100%);
+            transform-origin: left;
+       -moz-transform-origin: left;
+    -webkit-transform-origin: left;
+            transition:         transform 1s linear;
+       -moz-transition:    -moz-transform 1s linear;
+    -webkit-transition: -webkit-transform 1s linear;
+    position: relative;
+}
+
+#card-front .wrap {
+            transition: background 1s linear;
+       -moz-transition: background 1s linear;
+    -webkit-transition: background 1s linear;
+}
+
+button {
+  position: absolute;
+  bottom: 1em;
+  right: -12px;
+  background: #F44;
+  color: #FFF;
+  font-family: 'Nobile', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: .5em;
+  border: none;
+  cursor: pointer;
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .4);
+     -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .4);
+}
+
+button:hover,
+button:focus {
+  background: #F22;
+}
+
+#close {
+  display: none;
+}
+
+#card.open-fully #close,
+#card-open-half #close {
+  display: inline;
+}
+
+#card.open-fully #open {
+  display: none;
+}
+
+
+#card.open-half #card-front,
+#card.close-half #card-front {
+            transform: rotateY(-90deg);
+       -moz-transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
+}
+#card.open-half #card-front .wrap {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#card.open-fully #card-front,
+#card.close-half #card-front {
+  background: #FFEFEF;
+}
+
+#card.open-fully #card-front {
+    transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+#card.open-fully #card-front .wrap {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#card.open-fully #card-front .wrap *,
+#card.close-half #card-front .wrap * {
+   display: none;
+}
+
+.nxt {
+  margin-top: 100px;
+  float: right; 
+  font-weight: bold; 
+  font-family: 'Nobile', sans-serif;  
+  color: #000;
+}
+
+footer {
+  max-width: 500px;
+  margin: auto;
+  font-family: 'Nobile', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #888;
+  text-align: center;
+}
+}
+  </style>
+  </head>
+<body>
+  <div id="card">
+    <div id="card-inside">
+      <div class="wrap">
+        <p>“May this Diwali Light up New Dreams, Fresh Hopes, Undiscovered Avenues, Different Perspectives, Everything Bright & Beautiful, And Fill Your Days with Pleasant Surprises & Moments."<br> I wish you a very Happy Diwali 🎊✨🙂</p>
+        </p>
+        <p style="text-align: center;">ॐ सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः । सर्वे भद्राणि पश्यन्तु मा कश्चिद्दुःखभाग्भवेत् । 
+          <br>ॐ शान्तिः शान्तिः शान्तिः ॥</p>
+        <p style="text-align: center;">दीपावलीच्या हार्दिक शुभेच्छा ✨✨✨</p>
+        <center><h5>from</h5></center>
+        <p class="signed">Mayur Plastic Works<br>Mob: 9860584262</p>
+        <p></p>
+        <button id="close">&lt;</button>  
+      </div>
+    </div>
+    <div id="card-front">
+      <div class="wrap">
+        <h1>✨ <br> Happy Diwali <br> ✨</h1>
+        <br>
+        <br>
+        <p class="nxt">Click Here</p>
+      </div>
+      <button id="open">&gt;</button>
+      
+    </div>
+  </div>
+  <script>
+    (function() {
+  function $(id) {
+    return document.getElementById(id);
+  }
+
+  var card = $('card'),
+      openB = $('open'),
+      closeB = $('close'),
+      timer = null;
+  console.log('wat', card);
+  openB.addEventListener('click', function () {
+    card.setAttribute('class', 'open-half');
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(function () {
+      card.setAttribute('class', 'open-fully');
+      timer = null;
+    }, 1000);
+  });
+
+  closeB.addEventListener('click', function () {
+    card.setAttribute('class', 'close-half');
+    if (timer) clearTimerout(timer);
+    timer = setTimeout(function () {
+      card.setAttribute('class', '');
+      timer = null;
+    }, 1000);
+  });
+
+}());
+
+  </script>
+
+<div style="visibility: hidden; display: none;">
+<embed src="bday.mp3" autostart="true" loop="true">
+</div>
+<div style="visibility: hidden; display: none;">
+<embed src="bday.mp3" autostart="true" loop="true">
+</div>
+
+  </body>
+  </html>
