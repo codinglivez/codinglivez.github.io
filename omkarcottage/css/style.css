@@ -23,6 +23,15 @@ body {
 	position: fixed;
 }
 
+/*.header {
+	width: 97%;
+	display: flex;
+	background: linear-gradient(92.88deg, rgba(45, 124, 191, 0.45) 56.8%, rgba(45, 124, 191, 0) 93.77%);
+	border-radius: 10px;
+	margin: auto;
+	padding: 1.7rem 0 2.5rem 0;
+}*/
+
 .header img {
 	flex: 0.2;
 	z-index: 2;
@@ -36,6 +45,7 @@ body {
 	flex: 0.5;
 	float: right;
 	z-index: 2;
+	display: none;
 }
 
 .header nav .nav-link {
@@ -80,6 +90,10 @@ body {
 	font-size: 10px;
 }
 
+.active-header nav {
+	display: flex;
+}
+
 @keyframes dropping {
 	0% {
 		transform: translateY(-20vh);
@@ -102,7 +116,14 @@ body {
 .carousel-inner {
 	height: 100vh;
 	width: 100%;
+	background-size: contain;
+    background-repeat: no-repeat;
 	z-index: -1;
+}
+
+.carousel-item img {
+	min-height: 100vh;
+	object-fit: cover;
 }
 
 .main-container {
@@ -146,7 +167,7 @@ body {
 
 .room-main {
 	width: 100%;
-	height: 60vh;
+	height: auto;
 	background-color: #485461;
 	background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 	margin-bottom: 10px; 
@@ -174,6 +195,57 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.food-para {
+	z-index: -1;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.food-para div {
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-align: center;
+	background: rgb(0,0,0,0.4);
+}
+
+
+.food-para div h2 {
+	font-family: 'Playball', cursive;
+	font-size: 40px;
+	padding-top: 8%;
+	padding-bottom: 20px;
+}
+
+.food-para div p {
+	max-width: 900px;
+	margin: auto;
+}
+
+.food-para div button {
+	margin: 50px;
+	width: 180px;
+	padding: 10px;
+	border: none;
+	color: white;
+	font-family: 'Playball', cursive;
+	font-size: 24px;
+	background-color: #ff4e00;
+	background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+	line-height: 30px;  
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgb(0,0,0,0.3);
+}
+
+.food-para div button:hover {
+	background: white;
+	transition: 0.4s;
+	color: #ff4e00;
+	box-shadow: 4px 4px 10px rgb(0,0,0,0.3);
 }
 
 .parallax-div div {
@@ -228,11 +300,19 @@ body {
 
 /*--------------------------Index Page code ends----------------------------------*/
 
+.foodie {
+	padding-top: 0;
+}
+
 .pg-head-img {
 	height: 60vh; 
 	width: 100%;
 	z-index: -1;
-	background: url("../image/slider/img1.jpg");
+	background: url("../image/sightsee/beach3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+   
 }
 
 .pg-head-img h1 {
@@ -341,6 +421,21 @@ body {
 	padding-bottom: 10%;
 }
 
+.container-food {
+	padding-top: 0;
+	margin-top: 0;
+	transform: translateY(-80px);
+	padding-bottom: 10%;
+}
+
+.container-food .row img {
+	width: 100%;
+	min-height: 219px;
+	max-height: 220px;
+	object-fit: cover;
+	box-shadow: 0 0 10px rgb(0,0,0,0.4);
+}
+
 .row {
 	margin: 15px; 
 }
@@ -348,6 +443,7 @@ body {
 .row img {
 	transition: all 0.5s ease;
 	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgb(0,0,0,0.4);
 }
 
 .row img:hover {
@@ -398,12 +494,12 @@ body {
 		color: white;
 		margin: 2px;
 	}*/
-	.burger {
+	.active-header .burger {
 		padding: 10px;
 		z-index: 200;
 		cursor: pointer;
 	}
-	.line {
+	.active-header .line {
 		width: 25px;
 		height: 4px;
 		background: #10b8be;
