@@ -1,0 +1,138 @@
+<!--Main HTML Page Code-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Home | Omkar Cottage</title>
+</head>
+<body>
+	<section class="landing-pg">
+		<header class="header">
+			<img src="image/logo.svg">
+			<div class="buffer-area"></div>
+			<nav>
+				<ul class="nav-link">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="howtoreach.html">How to Reach</a></li>
+				<li><a href="sightseeing.html">SightSeeing</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<div class="burger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</header>
+		<div class="slider-main">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img class="d-block w-100" src="image/gallery/g.png" alt="First slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="image/gallery/img00.jpg" alt="Second slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="image/slider/img3.jpg" alt="Third slide">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</div>
+	</section>
+	<section class="main-container">
+		<div class="intro-data">
+			<h2>Welcome to Omkar Cottage</h2>
+	 		<h3>Located in one of the most colorful locales in Alibag, Omkar Cottage - Varsoli is an ideal stay option for those looking for a comfortable accommodation near Alibag beach.</h3>
+	 		<p>Omkar Cottage is a small cottage with spacious self contained AC and non AC rooms nestled within a campus of lush evergreen trees. The cottage is located at 1.5 kms from Alibag ST Stand. Built with care the cottage provides all the necessary amenities to ensure a delightful stay experience during your vacation in Alibag. Delicious home made food prepared in the traditional kokani culinary style is served at Omkar Cottage.</p>  
+	 		<h2>Holidays at Omkar Cottage</h2>
+	 		<p>Varsoli is the ideal place to stay in the Alibaug region to explore this part of Konkan. At just under 2.6 kms from Alibaug Main Beach Varsoli is almost centrally located to visit all the tourist attractions of the region be it the Kulaba sea fort or the Khanderi Underi fort. Varsoli Beach is also 1.4 kms from Omkar Cottage.</p>
+		</div>
+	</section>
+	<div class="room-main">
+		<div class="rm-head"><h2>Our Rooms</h2></div>
+		<div class="owl-carousel owl-theme loop">
+			<img class="item" src="image/gallery/room1.jpg">
+			<img class="item" src="image/gallery/room2.jpg">
+			<img class="item" src="image/gallery/room5.jpg">
+			<img class="item" src="image/gallery/room4.png">
+			<img class="item" src="image/gallery/room3.jpg">
+			<!--<a href="image/gallery/img.jpg" data-toggle="lightbox" data-gallery="gallery" class="item">
+				<img src="image/gallery/img.jpg" style="max-height: 250px" class="img-fluid rounded" alt="">
+			</a>-->
+		</div><br>
+		<div class="food-para" style="background-image: url(image/food/foodbg.jpg);">
+		<div>
+			<h2>Hey Foodies!</h2>
+			<p>We provide professional greade food to our customers with minimal rate as compared to the hotels around us. We ensure that our customers have a delicious meal when they are in our cottage. Want to have a look at our food and its rates...</p>
+			<a href="gallery.html#foodie"><button> Know More</button></a>
+		</div>		
+	</div><br>
+	</div>
+	<div class="parallax-div" style="background-image: url(image/gallery/sun.jpg);">
+		<div>
+			<h2>SERENE SUNSETS!</h2>
+			<p>Alibag is well known for the beautiful sunsets over a calm sea. Blessed with a vast expanse of soft sandy beach lined with 'suru' trees extending seamlessly onto Varsoli, Varsoli is one of the most romantic destinations in Alibaug.</p>
+		</div>		
+	</div>
+	<section class="footer-section">
+		<div>
+			<h3>Copyright <span>&#169;</span> 2020  | Designed and Developed by <a href="https://codinglivez.github.io/ravi/" target="_blank">Ravivanshikumar Sangpal</a> & <a href="#"> Neha Madhavi</a></h3>
+		</div>
+	</section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    	$(window).on("scroll", function() {
+		    if($(window).scrollTop() > 150) {
+		        $("header").addClass("active-header");
+		    } else {
+		       $("header").removeClass("active-header");
+		    }
+		});
+    </script>
+    <script>
+ 		$('.owl-carousel').owlCarousel({
+		    loop:true,
+		    margin:10,
+		    center:true,
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:2
+		        },
+		        1000:{
+		            items:3
+		        }
+		    }
+		})
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script type="text/javascript">
+    	$(document).on("click", '[data-toggle="lightbox"]', function(event){
+    		event.preventDefault();
+    		$(this).ekkoLightbox();
+    	});
+    </script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
