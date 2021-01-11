@@ -9,6 +9,9 @@
 	<title>How to Reach | Omkar Cottage</title>
 </head>
 <body>
+	<div class="loader-wrapper" id="loader">
+		<span class="loader"><span class="loader-inner"></span></span>
+	</div>
 	<header class="header">
 			<img src="image/logo.svg">
 			<div class="buffer-area"></div>
@@ -55,6 +58,12 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	var loader = document.getElementById("loader");
+			window.onload = function() {
+			 loader.style.display = 'none';
+		}
+    </script>
     <script>
     	$(window).on("scroll", function() {
 		    if($(window).scrollTop() > 150) {

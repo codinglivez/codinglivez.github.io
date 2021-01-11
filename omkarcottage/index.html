@@ -12,6 +12,9 @@
 	<title>Home | Omkar Cottage</title>
 </head>
 <body>
+	<div class="loader-wrapper" id="loader">
+		<span class="loader"><span class="loader-inner"></span></span>
+	</div>
 	<section class="landing-pg">
 		<header class="header">
 			<img src="image/logo.svg">
@@ -38,10 +41,10 @@
 			      <img class="d-block w-100" src="image/gallery/g.png" alt="First slide">
 			    </div>
 			    <div class="carousel-item">
-			      <img class="d-block w-100" src="image/gallery/img3.JPG" alt="Second slide">
+			      <img class="d-block w-100" src="image/gallery/img00.jpg" alt="Second slide">
 			    </div>
 			    <div class="carousel-item">
-			      <img class="d-block w-100" src="image/gallery/img17.JPG" alt="Third slide">
+			      <img class="d-block w-100" src="image/slider/img3.jpg" alt="Third slide">
 			    </div>
 			  </div>
 			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -67,11 +70,11 @@
 	<div class="room-main">
 		<div class="rm-head"><h2>Our Rooms</h2></div>
 		<div class="owl-carousel owl-theme loop">
-			<img class="item" src="image/gallery/room1.JPG">
-			<img class="item" src="image/gallery/room2.JPG">
-			<img class="item" src="image/gallery/room5.JPG">
+			<img class="item" src="image/gallery/room1.jpg">
+			<img class="item" src="image/gallery/room2.jpg">
+			<img class="item" src="image/gallery/room5.jpg">
 			<img class="item" src="image/gallery/room4.png">
-			<img class="item" src="image/gallery/room3.JPG">
+			<img class="item" src="image/gallery/room3.jpg">
 			<!--<a href="image/gallery/img.jpg" data-toggle="lightbox" data-gallery="gallery" class="item">
 				<img src="image/gallery/img.jpg" style="max-height: 250px" class="img-fluid rounded" alt="">
 			</a>-->
@@ -99,6 +102,12 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="owlcarousel/dist/owl.carousel.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	var loader = document.getElementById("loader");
+			window.onload = function() {
+			 loader.style.display = 'none';
+		}
+    </script>
     <script>
     	$(window).on("scroll", function() {
 		    if($(window).scrollTop() > 150) {
