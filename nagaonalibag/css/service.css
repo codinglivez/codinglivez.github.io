@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins@&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('css/OverlayScrollbars.min.css')
+
+* {
+	margin:0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.custom-scroll-class > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+	background: #094171;	
+}
+
+/*----------------------------------------service Page (servicesort.html)----------------------------------------*/
+
+.service-header {
+	background: #2D7CBF;
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	position: fixed;
+	z-index: 50;
+}
+
+.service-hd {
+	flex: 0.2;
+	padding: 20px;
+}
+
+.service-hd h2 {
+	font-family: Lobster;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 62px;
+	color: #FFAA7D;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.service-hd h2 .fa-greater-than {
+	transform: translateX(50px), translateY(-10px);
+	font-size: 30px;
+	font-weight: lighter;
+	color: white;
+	margin-left: 10px;
+}
+
+.service-center {
+	flex: 0.8; 
+	text-align: center;
+	padding: 10px;
+}
+
+.service-center h1 {
+	font-family: Lobster;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 70px;
+	line-height: 87px;
+	color: #FFFFFF;
+	text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.service-op {
+	flex: 0.2;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.service-op h4 {
+	cursor: pointer;
+	color: white;
+	font-size: 25px;
+}
+
+nav {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: #2D7CBF;
+	z-index: 100;
+	top: -100vh;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+}
+
+nav h2 {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	font-family: Lobster;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 80px;
+	line-height: 62px;
+	color: #FFAA7D;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav h3 {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	font-family: Lobster;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 80px;
+	line-height: 62px;
+	color: #FFAA7D;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav h3 a {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	font-family: Lobster;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 80px;
+	line-height: 62px;
+	color: #FFAA7D;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav h3 a:hover {
+	color: #FFAA7D;
+	text-decoration: none;
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+nav ul li {
+	list-style: none;
+	margin: 10px 0;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	font-family: Lobster;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 75px;
+	color: #FFFFFF;
+	text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+nav ul li a:hover {
+	text-decoration: none;
+	color: white;
+	font-size: 65px;
+	text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.35);
+	transition: 0.2s ease-in-out;
+}
+
+nav .fa-times {
+	color: white; 
+	font-size: 50px;
+	position: absolute;
+	right: 80px;
+	bottom: 50px;
+	cursor: pointer;
+}
+
+nav .fa-times:hover {
+	transform: rotate(90deg);
+	transition: 0.2s;
+}
+
+.service-element {
+	height: 30vh;
+	width: 90%;
+	margin: auto;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	display: flex;
+	margin-top: 3.5vh;
+	margin-bottom: 3.5vh; 
+}
+
+.service-element:hover {
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+	transition: 0.3s ease-in-out;
+}
+
+.service-img {
+	flex: 0.25;
+}
+
+.service-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.service-details {
+	flex: 0.75;
+	background: transparent;
+}
+
+.service-data {
+	width: 100%;
+	min-height: 80%;
+	display: flex;
+}
+
+.service-data .service-heading {
+	flex: 0.7;
+	padding: 3% 0 3% 2%;
+}
+
+.service-data .service-heading h2 {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 42px;
+	color: #CD4D47;
+	padding-left: 10%;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: #000000;
+	text-align: left;
+	padding-left: 10%;
+}
+
+.service-data .service-rent {
+	flex: 0.25;
+	text-align: center;
+	padding: 0.5rem;
+}
+
+.service-data .service-rent p {
+	text-align: center;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	color: #000000;
+}
+
+.service-data .service-rent h1 {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: bolder;
+	font-size: 50px;
+	line-height: 60px;
+	color: #000000;
+}
+
+.service-data .service-button {
+	flex: 0.3;
+	text-align: center;
+	position: relative;
+}
+
+.service-data .service-button button {
+	position: absolute;
+	border: none;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	background: #2D7CBF;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+	padding: 0.35rem 2.6rem 0.35rem 2.6rem;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 41px;
+	color: #FFFFFF;
+}
+
+.service-data .service-button button:hover {
+	color: #2D7CBF;
+	background: white;
+	transition: 0.3s ease-in-out;
+	outline: none;
+	box-shadow: 0px 0px 15px grey;
+}
+
+.service-data .service-button button:focus {
+	color: #2D7CBF;
+	background: white;
+	transition: 0.5s ease-in-out;
+	outline: none;
+	box-shadow: 0px 0px 15px grey;
+}
+
+.service-features {
+	max-width: 100%;
+	height: 20%;
+	background: #F9BA99;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 0 0 10px 0;
+}
+
+.service-features div {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 37px;
+	color: #000000;
+}
+
+@media screen and (max-width:450px) {
+	.service-header {
+		height: 10vh;
+	}
+	.service-hd {
+		padding: 5px;
+		flex: 0.2
+	}
+	.service-hd h2 {
+		font-size: 16px;
+	}
+	.service-hd h2 .fa-greater-than {
+		font-size: 10px;
+		transform: none;
+		margin: 0;
+	}
+	.service-center {
+		flex: 0.6;
+		padding: 5px; 
+	}
+	.service-center h1 {
+		font-size: 25px;
+		line-height: 9vh;
+	}
+	.menu-btn {
+		display: none;
+	}
+	nav h2 {
+		font-size: 40px;
+		line-height: 25px;
+	}
+	nav ul {
+		margin: 0;
+		padding: 0;
+	}
+	nav ul li a {
+		font-size: 20px;
+		line-height: 25px;
+	}
+	nav ul li a:hover {
+		font-size: 20px;
+	}
+	nav .fa-times {
+		font-size: 30px;
+		right: 40px;
+		bottom: 40px;
+	}
+	.service-op {
+		margin: 0;
+		padding: 0; 
+	}
+	.burger {
+		flex: 0.2;
+		padding: 20%; 
+		width: 100%;
+		height: 100%;
+	}
+	.line {
+		width: 30px;
+		height: 4px;
+		border-radius: 2px;
+		background: white;
+		margin: 5px; 
+	}
+	.service-element {
+		height: 65vh;
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+	.service-img img {
+		max-height: 20vh;
+		object-fit: cover;
+		border-radius: 10px 10px 0 0;
+	}
+	.service-data {
+		flex-direction: column;
+		width: 100%;
+	}
+	.service-data .service-heading {
+		padding: 5px;
+		max-height: 25vh; 
+	}
+	.service-data .service-heading h2 {
+		font-size: 25px;
+		padding: 0; 
+		text-align: center;
+	}
+	.service-data .service-heading p {
+		font-size: 15px;
+		padding: 0;
+		padding: 0 8px 0 8px;
+		text-align: justify;
+	}
+	.service-data .service-button {
+		padding: 20px 0 20px 0;
+	}
+	.service-data .service-button button {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.service-features {
+		flex-wrap: wrap;
+		height: auto;
+		border-radius: 0 0 10px 10px;
+	}
+	.service-features div {
+		font-size: 15px;
+	}
+	nav h3 a {
+		position: absolute;
+		top: 85vh;
+		right: 200px;
+		font-family: Lobster;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		line-height: 42px;
+		color: #FFAA7D;
+		text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	nav h3 a:hover {
+		color: #FFAA7D;
+		text-decoration: none;
+		transform: scale(1.1);
+		transition: 0.2s;
+	}
+}
+
+/*---------------------------------------- End of service Page Code ----------------------------------------*/

@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins@&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('css/OverlayScrollbars.min.css')
+
+* {
+	margin:0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.custom-scroll-class > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+	background: #094171;	
+}
+
+/*----------------------------------------Hotel Page (hotelsort.html)----------------------------------------*/
+
+.sort-head {
+	background: #2D7CBF;
+	width: 100%;
+	height: 15vh;
+	padding: 2%;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	overflow: hidden;
+	z-index: 100;
+}
+
+.sort-feild {
+	flex: 0.14;
+	border-radius: 10px 0 0 10px;
+}
+
+.sort-btn {
+	background: white;
+	border-radius: 10px;
+}
+
+select
+{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	border: none;
+	width: 100%;
+	cursor: pointer;
+}
+
+.select
+{
+	flex: 0.14;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px 0 0 10px;
+}
+
+.select::after{
+	content: "\25BC";
+	position: absolute;
+	background: #FFAA7D;
+	top: 0;
+	right: 0;
+	padding: 1rem;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+
+.select:hover::after{
+	background: white;
+}
+
+.filter-todo {
+	padding: 1rem;
+}
+
+.search-feild {
+	flex: 0.8;
+	float: right;
+	background: white;
+	display: flex;
+	border-radius: 0 10px 10px 0;
+}
+
+.search-bar-logo {
+	flex: 0.06;
+	padding: 1%;
+	padding-left: 20px;
+	padding-right: 0px;
+	background: linear-gradient(91.21deg, #FFAA7D 63.57%, rgba(255, 170, 125, 0) 87.53%);
+}
+
+.fa-search {
+	font-size: 25px;
+}
+
+.search-bar {
+	flex: 0.9;
+	background: white;
+}
+
+.search-bar input {
+	height: 100%;
+	width: 100%;
+	border: none;
+	outline: none;
+}
+
+.search-bar input:focus {
+	outline: none;
+}
+
+.filter-area {
+	margin-top: 15vh;
+	display: flex;
+	height: 8vh;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+.filter-darea {
+	margin-top: 8vh;
+	display: flex;
+	height: 8vh;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+.filter-div {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	flex: 0.15;
+	margin-right: 15px;
+	margin-left: auto;
+	order: 2;
+	display: flex;
+}
+
+.filter-by {
+	flex: 0.4;
+	background: #FFAA7D;
+	border-radius: 10px 0px 0px 10px;
+	text-align: center;
+	padding: 7px 0 7px 0;
+}
+
+.filter-dt {
+	flex: 0.6;
+	position: relative;
+}
+
+.filtering {
+	padding: 10px;
+	height: 100%; 
+	border-radius: 0 10px 10px 0;
+}
+
+.filter-dt::after {
+	content: "\25BC";
+	position: absolute;
+	background: transparent;
+	top: 0;
+	right: 0;
+	padding: 10px 20px 10px 20px;
+	pointer-events: none;
+}
+
+.hotel-element {
+	height: 30vh;
+	width: 90%;
+	margin: auto;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	display: flex;
+	margin-top: 3.5vh;
+	margin-bottom: 3.5vh; 
+}
+
+.hotel-img {
+	flex: 0.25;
+}
+
+.hotel-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.hotel-details {
+	flex: 0.75;
+	background: transparent;
+}
+
+.hotel-data {
+	width: 100%;
+	min-height: 80%;
+	display: flex;
+}
+
+.hotel-data .hotel-heading {
+	flex: 0.5;
+	padding: 3% 0 3% 2%;
+}
+
+.hotel-data .hotel-heading h2 {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: #CD4D47;
+	padding-left: 10%;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: #000000;
+	text-align: left;
+	padding-left: 10%;
+}
+
+.hotel-data .hotel-rent {
+	flex: 0.25;
+	text-align: center;
+	padding: 0.5rem;
+}
+
+.hotel-data .hotel-rent p {
+	text-align: center;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	color: #000000;
+}
+
+.hotel-data .hotel-rent h1 {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: bolder;
+	font-size: 50px;
+	line-height: 60px;
+	color: #000000;
+}
+
+.hotel-data .hotel-button {
+	flex: 0.25;
+	text-align: center;
+	position: relative;
+}
+
+.hotel-data .hotel-button button {
+	position: absolute;
+	border: none;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	background: #2D7CBF;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+	padding: 0.35rem 2.6rem 0.35rem 2.6rem;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 41px;
+	font-color: #FFFFFF;
+}
+
+.hotel-data .hotel-button button a {
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 0 30px 0 30px;  
+}
+
+.hotel-data .hotel-button button:hover {
+	color: #111;
+	background: #FFAA7D;
+	transition: 0.5s ease-in-out;
+	outline: none;
+	box-shadow: 0px 0px 15px grey;
+}
+.hotel-data .hotel-button button a:hover {
+	color: #2D7CBF;
+	text-decoration: none;
+	transition: 0.5s ease-in-out;
+}
+
+
+.hotel-data .hotel-button button:focus {
+	color: #2D7CBF;
+	background: white;
+	transition: 0.5s ease-in-out;
+	outline: none;
+	box-shadow: 0px 0px 15px grey;
+}
+
+.hotel-data  .hotel-button button a{
+
+}
+
+.hotel-features {
+	max-width: 100%;
+	height: 20%;
+	background: #F9BA99;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.hotel-features div {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 37px;
+	color: #000000;
+}
+
+@media screen and (max-width: 950px) {
+	.sort-head {
+		height: 10vh;
+		padding: 13px;
+	}
+	.select {
+		flex: 0.35;
+	}
+	.select::after {
+		padding: 10px;
+		font-size: 15px;
+	}
+	.filter-todo {
+		padding: 8px;
+	}
+	.search-feild {
+		flex: 0.62; 
+	}
+	.search-bar-logo {
+		padding: 6px;
+	}
+	.fa-search {
+		font-size: 16px;
+	}
+	.filter-area {
+		padding: 4px;
+		margin-top: 12vh; 
+	}
+	.filter-div {
+		flex: 0.7;
+	}
+	.filter-by h5 {
+		font-size: 15px;
+		padding: 5px;
+	}
+	.filtering option {
+		font-size: 15px;
+	}
+	.hotel-element {
+		height: auto;
+		flex-direction: column;
+		border-radius: 10px;
+		box-shadow: 0 0 10px black;
+	}
+	.hotel-img img {
+		max-height: 30vh;
+		border-radius: 10px 10px 0 0;
+		object-fit: cover;
+	}
+	.hotel-data {
+		flex-direction: column;
+	}
+	.hotel-data .hotel-heading {
+		padding: 10px;
+		max-height: 15vh;
+	}
+	.hotel-data .hotel-heading h2 {
+		font-size: 25px;
+		font-weight: bold; 
+	}
+	.hotel-data .hotel-heading p {
+		font-size: 15px;
+		margin-bottom: 0;
+	}
+	.hotel-data .hotel-rent {
+		padding: 5px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.hotel-data .hotel-rent p {
+		font-size: 15px;
+	}
+	.hotel-data .hotel-rent h1 {
+		font-size: 35px;
+		line-height: 40px;
+	}
+	.hotel-data .hotel-button {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+	.hotel-data .hotel-button button {
+		padding: 10px;
+		font-size: 25px;
+		line-height: 30px; 
+		width: 60%;
+	}
+	.hotel-features {
+		flex-wrap: wrap;
+		height: auto;
+		border-radius: 0 0 10px 10px;
+	}
+	.hotel-features div {
+		font-size: 15px;
+	}
+}
+
+/*---------------------------------------- End of Hotel Page Code ----------------------------------------*/
+
+/*----------------------------------------Hotel Details (hoteldetails.html)----------------------------------------*/
+
+/*
+.details-body {
+	width: 100%;
+	height: 100vh;
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.hotel-details-1 {
+	background: yellow;
+	height: 100%;
+	flex: 0.75;
+	background: #F9BA99;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.hdt-heading {
+	height: 15vh;
+	display: flex;
+	padding: 10px;
+}
+
+.hdth-1 {
+	flex: 0.7;
+}
+
+.hdth-1 h1 {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 60px;
+	line-height: 90px;
+	color: #000000;
+}
+
+.hdth-2 {
+	flex: 0.3;
+	height: 15vh;
+	display: flex;
+	padding: 20px;
+}
+
+.fa-phone-square-alt {
+	font-size: 50px;
+}
+
+.hdth-2 p {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 54px;
+	color: #000000;
+}
+
+.hdt-slide {
+	width: 100%;
+	height: 79.7vh;
+	border-radius: 0 0 10px 10px;
+}
+
+.hdt-slider {
+	max-height: 79.7vh;
+	border-radius: 0 0 10px 10px;	
+}
+
+.hotel-details-2 {
+	height: 100%;
+	flex: 0.25;
+	display: flex;
+	flex-direction: column;
+}
+
+.hdt-1 {
+	flex: 0.43;
+	width: 85%;
+	margin: auto;
+	transform: translateY(-7px);
+	background: #2D7CBF;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	padding: 10px;
+}
+
+.hdt-1 h2, .hdt-2 h2, .hdt-3 h2 {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 52px;
+	color: #FFFFFF;
+	padding: 20px;
+}
+
+.hdt-1 ul li {
+	display: flex;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 25px;
+	text-indent: 1px;
+	color: #FFFFFF;
+}
+
+.hdt-1 ul li p {
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.hdt-2 {
+	flex: 0.27;
+	width: 85%;
+	margin: auto;
+	background: #2D7CBF;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	padding: 10px;
+	padding-right: 0;
+}
+
+.hdt-2 ul li {
+	list-style: none;
+	color: white;
+	line-height: 20px;
+	transform: translateX(-30px);
+}
+
+.hdt-2 ul li p, .hdt-3 p {
+	margin-top: -10px;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.hdt-2 ul li p b {
+	font-size: 25px;
+}
+
+.hdt-3 {
+	flex: 0.23;
+	width: 85%;
+	margin: auto;
+	transform: translateY(7px);
+	background: #2D7CBF;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	padding: 10px;
+}
+
+.hdt-3 h2 {
+	padding-bottom: 10px;
+}
+
+.hdt-3 p {
+	transform: translateX(10px);
+}
+*/
+/*----------------------------------------End of Hotel Details----------------------------------------*/
+
+/*---------------------------------------- Hotel Details New ----------------------------------------*/
+
+.details-main{
+	padding: 20px;
+	width: 100%;
+	height: 130vh;
+}
+
+.details-header {
+	width: 100%;
+	height: 70vh;
+	border-radius: 10px;
+	box-shadow: 0 0 10px grey;
+}
+
+.details-header h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bolder;
+	color: #2D7CBF;
+	text-align: center;
+	text-shadow: 0 0 2px rgb(0,0,0, 0.4);
+}
+
+.main-carousel {
+	position: relative;
+	width: 100%;
+	height: 87vh; 
+	margin: auto;
+	border-radius: 15px;
+	box-shadow: 0px 0px 5px grey;
+}
+
+.carousel-item img {
+	max-width: 100%;
+	margin: auto;
+	height: 87vh;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.details-body {
+	margin-top: 30vh;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 10px grey;
+	padding: 30px;
+	font-family: 'Rokkitt';
+	color: #F9BA99;
+	background-color: #2D7CBF; 
+}
+
+.details-body p{
+	font-family: 'Varela Round';
+	font-size: 25px;
+	color: #FFFFFF;
+}
+
+.facilities ul {
+	margin: 3rem 0 3rem 0;
+	width: 100%;
+	display: flex;
+	list-style: none;
+}
+
+.facilities ul li {
+	display: flex;
+	font-family: 'Varela Round', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	line-height: 20px;
+	text-indent: 1px;
+	width: 30%;
+}
+
+.facilities ul li {
+	color: #2D7CBF;
+	font-size: 34px;
+}
+
+.rate-section {
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+
+.rate-section h2 {
+	flex: 0.7;
+}
+
+.rate-section h2 p {
+	font-size: 25px;
+}
+
+.rate-section h2 p b {
+	font-size: 32px; 
+	margin-left: 10px;
+}
+
+.rate-section div {
+	flex: 0.3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rate-section div button {
+	border: none;
+	background: #F9BA99;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+	padding: 0.35rem 2.6rem 0.35rem 2.6rem;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 41px;
+	color: #FFFFFF;
+}
+
+.rate-section div button:hover {
+	color: #2D7CBF;
+	background: white;
+	transition: 0.5s ease-in-out;
+	outline: none;
+	box-shadow: 0px 0px 15px grey;
+}
+
+
+@media screen and (max-width: 450px) {
+	.details-main {
+		padding: 10px;
+	}
+	.details-header {
+		height: 67vh;
+		margin-bottom: 33vh;
+	}
+	.details-header h1 {
+		font-size: 25px;
+		padding: 5px;
+		margin-bottom: 0;
+	}
+	.main-carousel {
+		height: 87vh; 
+	}
+	.carousel-item img {
+		min-height: 87vh;
+	}
+	.details-body {
+		margin-top: 30vh;
+	}
+	.details-body p {
+		font-size: 15px;
+	}
+	.rate-section {
+		flex-direction: column;
+		margin: 0;
+	}
+	.rate-section h2 p {
+		font-size: 15px;
+	}
+	.rate-section h2 p b {
+		font-size: 20px;
+	}
+	.rate-section div button {
+		font-size: 20px;
+		line-height: 35px;
+	}
+	.facilities ul {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.facilities ul li {
+		width: 100%;
+	}
+}
+
+/*----------------------------------------------------------------- Dhaba  list start -------------------------------------------------------------------*/
+
+.sort-head .dhaba-hd {
+	width: 100%; 
+	text-align: left; 
+	font-family: 'Poppins', sans-serif; 
+	color: white; 
+	padding: 0px; 
+	border-radius: 10px 0 10px 0;
+}
+
+.sort-head .dhaba-hd h1 {
+	font-size: 60px; 
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 450px) {
+	.sort-head .dhaba-hd {
+		width: 100%; 
+		text-align: center; 
+		font-family: 'Poppins', sans-serif; 
+		color: white; 
+		padding: 6px; 
+		border-radius: 10px 0 10px 0;
+	}
+
+	.sort-head .dhaba-hd h1 {
+		font-size: 25px; 
+		font-weight: bold;
+		font-family: 'Poppins', sans-serif;
+	}
+}
