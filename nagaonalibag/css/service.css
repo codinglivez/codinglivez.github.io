@@ -221,7 +221,7 @@ nav .fa-times:hover {
 
 .service-data .service-heading {
 	flex: 0.7;
-	padding: 3% 0 3% 2%;
+	padding: 1% 0 1% 2%;
 }
 
 .service-data .service-heading h2 {
@@ -323,7 +323,7 @@ p {
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 25px;
+	font-size: 15px;
 	line-height: 37px;
 	color: #000000;
 }
@@ -393,7 +393,7 @@ p {
 		margin: 5px; 
 	}
 	.service-element {
-		height: 65vh;
+		height: auto;
 		flex-direction: column;
 		margin-bottom: 30px;
 	}
@@ -422,7 +422,7 @@ p {
 		text-align: justify;
 	}
 	.service-data .service-button {
-		padding: 20px 0 20px 0;
+		padding: 20px 0 40px 0;
 	}
 	.service-data .service-button button {
 		font-size: 30px;
@@ -434,7 +434,7 @@ p {
 		border-radius: 0 0 10px 10px;
 	}
 	.service-features div {
-		font-size: 15px;
+		font-size: 12px;
 	}
 	nav h3 a {
 		position: absolute;
