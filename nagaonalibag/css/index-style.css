@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins@&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Denk+One&display=swap');
@@ -269,7 +269,7 @@ header {
 	margin: 1% 2% 0.7% 2%;
 	padding: 1rem;
 	border-radius: 10px;
-	height: 46vh;
+	height: 50vh;
 	flex: 0.4;
 }
 
@@ -321,7 +321,7 @@ header {
 	font-style: normal;
 	font-weight: 600;
 	font-size: 35px;
-	line-height: 40px;
+	line-height: 37px;
 	color: #000000;
 	padding-top: 2%;
 	margin-left: 7%;
@@ -332,7 +332,7 @@ header {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 17px;
-	line-height: 20px;
+	line-height: 18px;
 	text-align: justify;
 	color: #000000;
 	width: 400px;
@@ -390,7 +390,7 @@ header {
 	font-size: 18px;
 	line-height: 20px;
 	text-align: justify;
-	margin: 8px;
+	margin: 6px;
 	color: #FFFFFF;
 }
 
@@ -543,7 +543,7 @@ header {
 	background: #2D7CBF;
 	border-radius: 10px;
 	padding: 0;
-	height: 65vh;
+	height: 70vh;
 	filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.7));
 }
 
@@ -851,7 +851,7 @@ p {
 		height: 50vh;
 	}
 	.introduction-page {
-		height: 170vh;
+		height: 190vh;
 		width: 100%;
 	}
 	.introduction-main {
@@ -876,10 +876,15 @@ p {
 	}
 	.introduction-slider {
 		margin: 5px;
-		height: 60vh;
+		height: 62vh;
+	}
+	.introduction-slider .carousel-inner {
+		max-height: 56vh;
+		border-radius: 10px;
+		object-fit: cover;
 	}
 	.hotel-slide {
-		height: 50vh;
+		height: 62vh;
 	}
 	.services-home {
 		flex-direction: column;
