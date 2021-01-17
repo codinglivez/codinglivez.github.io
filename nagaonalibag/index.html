@@ -11,6 +11,16 @@
 	<link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
 </head>
 <body>
+	<div class="preload">
+		<img class="airplane" src="image/airplane.png" alt="airplane">
+		<h3>Landing on the Website.....</h3>
+		<img class="cloud1" src="image/cloud.png" alt="cloud1">
+		<img class="cloud2" src="image/cloud.png" alt="cloud2">
+		<img class="cloud3" src="image/cloud.png" alt="cloud3">
+		<img class="cloud4" src="image/cloud.png" alt="cloud1">
+		<img class="cloud5" src="image/cloud.png" alt="cloud2">
+		<img class="cloud6" src="image/cloud.png" alt="cloud3">
+	</div>
 	<header class="header">
 			<div class="banner-main">
 				<h1><img src="image/logo3.jpg" alt="" class="image">  Alibaug Nagaon</h1>
@@ -363,6 +373,12 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="owlcarousel/dist/owl.carousel.min.js"></script>
+	<script>
+		window.addEventListener("load", () => {
+			const preload = document.querySelector(".preload");
+			preload.classList.add('preload-finish');
+		});
+	</script>
 	<script>
  		$('.owl-carousel').owlCarousel({
 		    loop:true,
