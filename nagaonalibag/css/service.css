@@ -201,11 +201,16 @@ nav .fa-times:hover {
 
 .service-img {
 	flex: 0.25;
+	background: #2D7CBF;
+	border-radius: 10px 0 0 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .service-img img {
-	width: 100%;
-	height: 100%;
+	height: 15vh;
+	filter: invert();
 }
 
 .service-details {
@@ -397,9 +402,12 @@ p {
 		flex-direction: column;
 		margin-bottom: 30px;
 	}
+	.service-img {
+		min-height: 15vh;
+		border-radius: 10px 10px 0 0;
+	}
 	.service-img img {
-		max-height: 20vh;
-		object-fit: cover;
+		height: 10vh;
 		border-radius: 10px 10px 0 0;
 	}
 	.service-data {
