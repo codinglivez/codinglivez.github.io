@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/careerform.css">
+	<script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+	<title>Career | Yugatechno </title>
+</head>
+<body>
+	<section class="main-1">
+		<nav class="secondary-header">
+			<div class="logo"><img src="img/logo.svg"><div><h1> Yuga Techno</h1><p>For Next-Gen Innovators!</p></div>
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Our Solutions</a></li>
+				<li><a href="career.html">Career</a></li>
+				<li><a href="#">Take Test</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+			<div class="burger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</nav>
+	</section>
+	<section class="career-landing">
+		<div class="career-landing-overlay">
+			<h1>Join with us</h1>
+			<p>At Yuga Techno, we seek creative, innovative, eager students to join our family
+			of collaborative and ambitious industry professionals working on cutting edge technology.</p>
+			<p>Build your career <b>and the future of India</b> with us.</p>
+			<button>Apply to Join our team</button>
+			<small>
+				Learn what its like to work with Yuga Techno<br>
+				<a href="#career-intro"><i class="fa fa-arrow-down" style="color: white;"></i></a>
+			</small>
+		</div>
+	</section>
+	<section class="career-intro" id="career-intro">
+		<h2>Why Choose Yuga Techno </h2>
+		<div class="career-intro-classification">
+			<div class="career-data">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis
+				aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+				nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+				qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="career-img">
+				<img src="img/career/thinking.svg">
+			</div>
+		</div>
+	</section>
+	<section class="career-form">
+		<div class="formtainer">
+            <form method="POST" class="appointment-form" id="appointment-form">
+                <h2>Get in touch for more insight</h2>
+                <div class="form-group-1">
+                    <input type="text" name="title" id="title" placeholder="Position Title" required />
+                    <input type="text" name="name" id="name" placeholder="Your Name" required />
+                    <input type="email" name="email" id="email" placeholder="Email" required />
+                    <input type="number" name="phone_number" id="phone_number" placeholder="Phone number" required />
+                    <input type="number" name="experience" id="experience" placeholder="Number of related Years of Experience" required />
+                    <label style="color: #999;">Availability Date</label><input type="date" name="date" id="date" placeholder="Availability Date" required />
+                    <textarea placeholder="Additional Information"></textarea>
+                    <label style="color: #999;">Upload Resume</label><input type="file" name="resume" id="resume" accept="application/pdf" required />
+                </div>
+                <div class="form-submit">
+                    <input type="submit" name="submit" id="submit" class="submit" value="Request an appointment" />
+                </div>
+            </form>
+        </div>
+	</section>
+
+	<section class="footer">
+		<div class="footer-data">
+			<div class="footer-intro">
+				<div class="logo">
+					<img src="img/logo.svg">
+					<div>
+						<h1> Yuga Techno</h1>
+						<p>For next-gen Innovators!</p>
+					</div>
+				</div>
+				<div class="social-media-footer">
+		            <p>Connect with us :</p>
+		            <div class="social-icons-footer">
+		              <a href="#">
+		                <i class="fab fa-facebook-f"></i>
+		              </a>
+		              <a href="#">
+		                <i class="fab fa-twitter"></i>
+		              </a>
+		              <a href="#">
+		                <i class="fab fa-instagram"></i>
+		              </a>
+		              <a href="#">
+		                <i class="fab fa-linkedin-in"></i>
+		              </a>
+		            </div>
+		        </div>
+			</div>
+			<div class="footer-links">
+				<h2>Important Links</h2>
+				<ul>
+					<a href="#"><li>About Us</li></a>
+					<a href="#"><li>Our Solutions</li></a>
+					<a href="career.html"><li>Career</li></a>
+					<a href="#"><li>Take Test</li></a>
+					<a href="contact.html"><li>Contact Us</li></a>
+				</ul>
+			</div>
+			<div class="footer-contact">
+				<h2>Contact Details</h2>
+				<p>support@yugatech.com</p>
+				<p>www.yugatech.com</p>
+				<p>Yugatechnologies Pvt. Ltd.<br>S.No.1, Prachi Residency 2, Besides Frozen Bottle, Main road Baner, Baner, Pune, Maharashtra - 410 045</p>
+				<p> +91 12345-67890</p>
+			</div>
+		</div>
+		<div class="footer-credit">
+			<h3>All rights Reserved | 2021 | Designed by <b>Ravivanshikumar Sangpal</b></h3>
+		</div>
+	</section>
+	<script type="text/javascript">
+		const hamburger = document.querySelector('.burger');
+		const navlink = document.querySelector('nav ul');
+		const links = document.querySelectorAll('nav ul li a');
+
+		hamburger.addEventListener('click', () => {
+		    navlink.classList.toggle('open');
+		    links.forEach(link => {
+		        link.classList.toggle("fade");
+		    })
+		})
+	</script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/careerform.js"></script>
+</body>
+</html>

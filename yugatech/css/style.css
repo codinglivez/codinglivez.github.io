@@ -12,6 +12,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'fnt-normal', sans-serif;
+  scroll-behavior: smooth;
 }
 /*********************************** Index Page Code ******************************/
 .logo {
@@ -979,6 +980,107 @@ textarea.input {
 
 /*********************************** Contact Page Code ENDS ****************************/
 
+/*************************************** Career Page Code **********************************/
+
+.career-landing {
+  height: 85vh;
+  width: 100%;
+  background: url('../img/career/landing.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.career-landing-overlay {
+  background: rgba( 0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.career-landing-overlay h1 {
+  text-transform: uppercase;
+  font-family: 'fnt-bold', sans-serif;
+}
+
+.career-landing-overlay p {
+  max-width: 35%;
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+.career-landing-overlay button {
+  padding: 10px 20px 10px 20px;
+  text-transform: uppercase;
+  font-family: 'fnt-bold', sans-serif;
+  color: #5B4AF9;
+  border: none;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+.career-landing-overlay small {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.career-landing-overlay small a i {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.career-intro {
+  height: 90vh;
+  width: 100%;
+  padding: 8%;
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+.career-intro h2 {
+  font-family: 'fnt-bold', sans-serif;
+  color: #3f3d56;
+  text-decoration: #5B4AF9 solid underline;
+  text-underline-position: under;
+}
+
+.career-intro-classification {
+  display: flex;
+  padding: 5% 0 5% 0;
+  justify-content: space-around;
+}
+
+.career-data {
+  flex: 0.6;
+  margin-bottom: 8%;
+  padding: 30px;
+  text-align: justify;
+  display: flex;l
+  justify-content: center;
+  align-items: center;
+}
+
+.career-img {
+  flex: 0.3;
+  margin-bottom: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.career-img img {
+  height: 50vh;
+}
+
+.career-form {
+  background: linear-gradient(50deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.09)), url('../img/career/form-bg.svg');
+}
+
+/*************************************** Career Page Code ENDS **********************************/
+
 @media screen and (max-width: 450px) {
 	* {
 		overflow-x: hidden;
@@ -1201,4 +1303,20 @@ textarea.input {
 	.footer-credit h3 {
 		text-align: center;
 	}
+  .career-landing-overlay p {
+    max-width: 95%;
+  }
+  .career-intro {
+    height: auto;
+  }
+  .career-intro h2 {
+    font-size: 25px;
+    overflow: hidden;
+  }
+  .career-intro-classification {
+    flex-direction: column-reverse;
+  }
+  .career-img img {
+    height: 30vh;
+  }
 }
