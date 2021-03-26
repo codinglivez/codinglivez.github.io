@@ -1081,6 +1081,83 @@ textarea.input {
 
 /*************************************** Career Page Code ENDS **********************************/
 
+/****************************************** Test Page Code **************************************/
+
+.test-pg-intro {
+  padding: 8%;
+  text-align: center;
+}
+
+.test-pg-intro h1 {
+  color: #5B4AF9;
+  font-family: 'fnt-bold', sans-serif;
+  text-transform: uppercase;
+}
+
+.test-index {
+  padding: 30px;
+  margin-bottom: 8%;
+}
+
+.test-index .row {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.test-index .row a {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #5a119f;
+  flex:1;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.test-index .row .element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-index .row .element i {
+  flex:0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: #750ED5;
+}
+
+.test-index .row .element p {
+  flex:0.7;
+  padding: 15px;
+  margin: 0;
+  height: 100%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-index .row a:hover {
+  background: #750ED5;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+  box-shadow: 0 0 16px rgb(0,0,0,0.5);
+}
+
+.test-index .row a:hover i {
+  color: white;
+  transition: 0.4s;
+}
+
+/*************************************** Test Page Code ENDS ************************************/
+
 @media screen and (max-width: 450px) {
 	* {
 		overflow-x: hidden;
@@ -1318,5 +1395,23 @@ textarea.input {
   }
   .career-img img {
     height: 30vh;
+  }
+  .test-pg-intro h1 {
+    font-size: 35px;
+    overflow: hidden;
+  }
+  .test-index .row {
+    flex-direction: column;
+  }
+  .test-index .row a {
+    margin: 10px 0 10px 0;
+  }
+  .test-index .row .element i {
+    font-size: 30px;
+    flex: 0.2;
+  }
+  .test-index .row .element p {
+    padding: 8px;
+    flex: 0.8;
   }
 }

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/careerform.css">
+	<script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+	<title>Take Test | Yuga Techno</title>
+</head>
+<body>
+	<section class="main-1">
+		<nav class="secondary-header">
+			<div class="logo"><img src="img/logo.svg"><div><h1> Yuga Techno</h1><p>For Next-Gen Innovators!</p></div>
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Our Solutions</a></li>
+				<li><a href="career.html">Career</a></li>
+				<li><a href="#">Take Test</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+			<div class="burger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</nav>
+	</section>
+	<div class="test-pg-intro"><h1>Practice Tests</h1></div>
+	<section class="test-index">
+		<div class="row">
+			<a href="construction.html"><div class="element">
+				<i class="fa fa-calculator"></i>
+				<p>Numerical Reasoning</p>
+			</div></a>
+			<a href="construction.html"><div class="element">
+				<i class="fa fa-language"></i>
+				<p>Verbal Reasoning</p>
+			</div></a>
+			<a href="construction.html"><div class="element">
+				<i class="fa fa-shapes"></i>
+				<p>Diagrammatic Reasoning</p>
+			</div></a>
+			<a href="construction.html"><div class="element">
+				<i class="fab fa-think-peaks"></i>
+				<p>Abstract Reasoning</p>
+			</div></a>	
+		</div>
+		<div class="row">
+			<a href="construction.html"><div class="element">
+				<i class="fa fa-brain"></i>
+				<p>Logical Reasoning</p>
+			</div></a>
+			<a href="construction.html"><div class="element">
+				<i class="fa fa-code-branch"></i>
+				<p>Analytical Reasoning</p>
+			</div></a>
+			<a href="construction.html"><div class="element">
+				<i class="fa fa-road"></i>
+				<p>Cognitive Ability</p>
+			</div></a>
+			<a href="construction.html"><div class="element">
+				<i class="fa fa-braille"></i>
+				<p>Spatial Reasoning</p>
+			</div>		</a>	
+		</div>
+		<div class="row">
+			<a href="construction.html"><div class="element">
+				<i class="fa fa-volume-up"></i>
+				<p>Basic Comprehension</p>
+			</div></a>
+			<a href="construction.html"><div class="element">
+				<i class="fa fa-funnel-dollar"></i>
+				<p>Financial Reasoning</p>
+			</div></a>
+			<a href="construction.html"><div class="element">
+				<i class="fa fa-search"></i>
+				<p>Inductive Reasoning</p>
+			</div></a>
+			<a href="construction.html"><div class="element">
+				<i class="fa fa-eraser"></i>
+				<p>Deductive Reasoning</p>
+			</div></a>
+		</div>
+	</section>
+
+	<section class="footer">
+		<div class="footer-data">
+			<div class="footer-intro">
+				<div class="logo">
+					<img src="img/logo.svg">
+					<div>
+						<h1> Yuga Techno</h1>
+						<p>For next-gen Innovators!</p>
+					</div>
+				</div>
+				<div class="social-media-footer">
+		            <p>Connect with us :</p>
+		            <div class="social-icons-footer">
+		              <a href="#">
+		                <i class="fab fa-facebook-f"></i>
+		              </a>
+		              <a href="#">
+		                <i class="fab fa-twitter"></i>
+		              </a>
+		              <a href="#">
+		                <i class="fab fa-instagram"></i>
+		              </a>
+		              <a href="#">
+		                <i class="fab fa-linkedin-in"></i>
+		              </a>
+		            </div>
+		        </div>
+			</div>
+			<div class="footer-links">
+				<h2>Important Links</h2>
+				<ul>
+					<a href="#"><li>About Us</li></a>
+					<a href="#"><li>Our Solutions</li></a>
+					<a href="career.html"><li>Career</li></a>
+					<a href="#"><li>Take Test</li></a>
+					<a href="contact.html"><li>Contact Us</li></a>
+				</ul>
+			</div>
+			<div class="footer-contact">
+				<h2>Contact Details</h2>
+				<p>support@yugatech.com</p>
+				<p>www.yugatech.com</p>
+				<p>Yugatechnologies Pvt. Ltd.<br>S.No.1, Prachi Residency 2, Besides Frozen Bottle, Main road Baner, Baner, Pune, Maharashtra - 410 045</p>
+				<p> +91 12345-67890</p>
+			</div>
+		</div>
+		<div class="footer-credit">
+			<h3>All rights Reserved | 2021 | Designed by <b>Ravivanshikumar Sangpal</b></h3>
+		</div>
+	</section>
+	<script type="text/javascript">
+		const hamburger = document.querySelector('.burger');
+		const navlink = document.querySelector('nav ul');
+		const links = document.querySelectorAll('nav ul li a');
+
+		hamburger.addEventListener('click', () => {
+		    navlink.classList.toggle('open');
+		    links.forEach(link => {
+		        link.classList.toggle("fade");
+		    })
+		})
+	</script>
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
