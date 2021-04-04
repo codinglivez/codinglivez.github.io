@@ -14,7 +14,8 @@
 	font-family: 'fnt-normal', sans-serif;
   scroll-behavior: smooth;
 }
-/*********************************** Index Page Code ******************************/
+
+/*********************************** Solution Page Code ******************************/
 .logo {
 	flex: 0.25;
 	font-family: 'fnt-bold', sans-serif;
@@ -158,6 +159,7 @@ nav ul li a:hover {
 }
 
 .main-2 {
+  margin-top: 25vh;
 	height: 40vh;
 	/*background: url('../img/element19.png');*/
 }
@@ -558,7 +560,137 @@ nav ul li a:hover {
 	font-family: 'fnt-normal', sans-serif;
 }
 
-/*********************************** Index Page Code ENDS ******************************/
+/*********************************** Solution Page Code ENDS ******************************/
+
+/**************************************** Index Page Code *********************************/
+
+.about-section {
+  margin-top:-10vh;
+  display: flex;
+}
+
+.about-data {
+  flex:0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 3rem 2rem 3rem;
+  text-align: center;
+}
+
+.about-data h1 {
+  font-family: 'fnt-bold', sans-serif;
+  padding: 1.5rem;
+}
+
+.about-data p {
+  text-align: justify;
+  margin: 0.8rem 3rem;
+}
+
+.about-img {
+  flex:0.4;
+}
+
+.staffing-section {
+  margin-top: 1.5rem;
+  height: 40vh;
+  background: url('../img/staff-bg.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.staffing-section h1 {
+  font-family: 'fnt-bold', sans-serif;
+  font-size: 2rem;
+  padding: 0.3rem;
+}
+
+.staffing-section p {
+  width: 45%;
+  text-align: justify;
+}
+
+.project-section {
+  min-height: 120vh;
+  background: url('../img/project-wave.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.project-data {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.project-data h1 {
+  font-size: 2rem;
+  margin: 2rem;
+  font-family: 'fnt-bold', sans-serif;
+}
+
+.project-data p {
+  text-align: justify;
+  width: 90%;
+}
+
+.project-list {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ol.gradient-list {
+  counter-reset: gradient-counter;
+  list-style: none;
+  margin: 1.75rem 0;
+  padding-left: 1rem;
+}
+ol.gradient-list > li {
+  background: #fafafa;
+  border-radius: 0.5rem;
+  counter-increment: gradient-counter;
+  margin-top: 1rem;
+  min-height: 3rem;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+  box-shadow: 0 0 10px rgb(0,0,0,0.16);
+}
+ol.gradient-list > li::before {
+  background: url('../img/trg.svg');
+  border-radius: 1rem 1rem 0 1rem;
+  content: "";
+  left: -4rem;
+  overflow: hidden;
+  position: absolute;
+  top: -2.5rem;
+  height: 130px;
+  width: 141px;
+  transform: scale(0.4);
+}
+ol.gradient-list > li::before {
+  align-items: flex-end;
+  content: counter(gradient-counter);
+  color: #fff;
+  display: flex;
+  font-size: 3em;
+  font-weight: bolder;
+  font-family: 'fnt-bold', sans-serif;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+/********************************** Index Page Code ENDS *******************************/
 
 /*********************************** Contact Page Code *********************************/
 
@@ -1413,5 +1545,71 @@ textarea.input {
   .test-index .row .element p {
     padding: 8px;
     flex: 0.8;
+  }
+  .about-section {
+    flex-direction: column;
+  }
+  .about-data {
+    padding: 0.5rem;
+  }
+  .about-data p {
+    margin: 2rem;
+  }
+  .about-img img {
+      width: 90%;
+      margin: 0 auto;    
+  }
+  .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .staffing-section {
+    height: 50vh;
+  }
+  .staffing-section p {
+    width: 90%;
+  }
+  .project-section {
+    flex-direction: column;
+  }
+  .project-data {
+    padding: 2rem;
+    overflow: visible;
+  }
+  .project-list {
+    background: url('../img/project-wave.svg');
+    background-size: cover;
+    background-position: center; 
+  }
+  ol.gradient-list li {
+    min-height: 2rem;
+    overflow: visible;
+    max-width: 90%;
+    margin: 1.75rem auto;
+  }
+  ol.gradient-list > li::before {
+    background: url('../img/trg.svg');
+    border-radius: 1rem 1rem 0 1rem;
+    content: "";
+    left: -4rem;
+    overflow: hidden;
+    position: absolute;
+    top: -2.3rem;
+    height: 130px;
+    width: 141px;
+    transform: scale(0.4);
+  }
+  ol.gradient-list > li::before {
+    align-items: flex-end;
+    content: counter(gradient-counter);
+    color: #fff;
+    display: flex;
+    font-size: 3em;
+    font-weight: bolder;
+    font-family: 'fnt-bold', sans-serif;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
   }
 }
