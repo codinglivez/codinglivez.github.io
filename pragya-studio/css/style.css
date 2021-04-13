@@ -325,6 +325,12 @@ nav ul li {
 	font-weight: bolder;
 }
 
+.index-parallax h1 .hd {
+	font-family: 'Alex Brush', cursive;
+	text-transform: none;
+	font-size: 4rem;
+}
+
 .index-parallax p {
 	font-size: 1.3rem;
 	width: 60%;
